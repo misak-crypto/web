@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jak hostovat web přes GitHub Pages</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 0 15px;
-            line-height: 1.6;
-        }
-        li { margin-bottom: 15px; }
-        code { 
-            background: #eee; 
-            padding: 3px; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Moje Restaurace</title>
+  <link rel="icon" type="image/x-icon" href="">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+    header, footer { background-color: #333; color: white; text-align: center; padding: 15px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    /* HOVER EFEKT NA ODKAZY */
+    nav a:hover { color: #orange; text-decoration: underline; }
+    main { padding: 20px; max-width: 800px; margin: auto; background: white; }
+    .btn { display: inline-block; background: orange; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; }
+    .btn:hover { background: darkorange; }
+  </style>
 </head>
 <body>
-    <h1>Jak hostovat web přes GitHub Pages?</h1>
-    <ol>
-        <li>
-            Přihlaš se na svůj GitHub účet.
-        </li>
-        <li>
-            Otevři <a href="https://github.com/chlubna25/jak_hostovat">vzorový repozitář</a>.
-            Klikni na <b>Fork</b>, změň název repozitáře
-            a potvrď <b>Create fork</b>.
-        </li>
-        <li>
-            Ve svém repozitáři klikni na <b>+</b>, zvol <b>Upload files</b> a nahraj své soubory webu.
-        </li>
-        <li>
-            Otevři <b>Settings → Pages</b>. U položky <b>Source</b> vyber
-            <b>Deploy from a branch</b>. Nastav <code>main</code>, <code>/(root)</code>
-            a klikni na <b>Save</b>.
-        </li>
-        <li>
-            Za pár minut najdeš web na adrese
-            <code>https://TVUJ-UCET.github.io/NÁZEV-REPA/</code>.
-        </li>
-    </ol>
-
-    <p><b>Pozor:</b> Pro bezplatné GitHub Pages musí být repozitář veřejný (<b>Public</b>).</p>
+ 
+  <header>
+    <h1>Restaurace U Myšky</h1>
+    <nav>
+      <a href="index.html">Úvod</a> |
+      <a href="menu.html">Jídelní lístek</a> |
+      <a href="o-nas.html">O nás</a> |
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+ 
+  <main>
+    <h2>Vítejte na našem webu!</h2>
+    <p>Jsme nová restaurace založená po úspěšné maturitě. Nabízíme skvělé jídlo a příjemné prostředí.</p>
+    <br>
+    <a href="menu.html" class="btn">Prohlédnout si menu</a>
+  </main>
+ 
+  <footer>
+    <p>&copy; 2026 Restaurace U Myšky</p>
+  </footer>
+ 
 </body>
 </html>
